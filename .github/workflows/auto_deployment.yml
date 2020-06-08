@@ -31,4 +31,4 @@ jobs:
       run: npm install --global surge
       
     - name: Deploying Website
-      run: surge ./ http://saad2020.surge.sh/ --token "49b8a18303e22c351b1aad48d2de28a3"
+      run: surge ./ http://saad2020.surge.sh/ --token ${{ secrets.SURGE_TOKEN}}
